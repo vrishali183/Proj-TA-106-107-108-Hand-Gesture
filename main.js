@@ -14,7 +14,8 @@ Webcam.attach( '#camera' );
 function take_snapshot()
 {
     Webcam.snap(function(data_uri) {
-        document.getElementById("result").innerHTML = '<img id="captured_image" src="'+data_uri+'"/>';
+      //add result
+        document.getElementById("").innerHTML = '<img id="captured_image" src="'+data_uri+'"/>';
     });
 }
 
@@ -47,17 +48,20 @@ function gotResult(error, results) {
     if(gesture == "amazing")
     {
       toSpeak = "This is looking amazing";
-      document.getElementById("result_object_gesture_icon").innerHTML = "&#128076;";
+      //add result_object_gesture_icon
+      document.getElementById("").innerHTML = "&#128076;";
     }
     else if(gesture == "best")
     {
       toSpeak = "All the best";
-      document.getElementById("result_object_gesture_icon").innerHTML = "&#128077;";
+      //add result_object_gesture_icon
+      document.getElementById(" ").innerHTML = "&#128077;";
     }
     else if(gesture == "victory")
     {
       toSpeak = "That was the marvelous victory";
-      document.getElementById("result_object_gesture_icon").innerHTML = "&#9996;";
+      //add result_object_gesture_icon
+      document.getElementById(" ").innerHTML = "&#9996;";
     }
 
     speak();
